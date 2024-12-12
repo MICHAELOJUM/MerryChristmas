@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Christmas Ever</title>
+  </head>
+  <body>
+    <a href="index2.html">Click to enter the website</a>
+  </body>
+  <script>
+    setTimeout(() => {
+      const element = document.createElement("p");
+      element.textContent = "🎄Merry Christmas🎄";
+      element.style.backgroundColor = "red";
+      element.style.fontSize = "100px";
+      element.style.color = "white";
+      element.style.fontFamily = "Arial";
+      element.style.textAlign = "center";
+      document.body.appendChild(element);
+      const message = new SpeechSynthesisUtterance(
+        "Ho Ho Ho, Merry Christmas!"
+      );
+      window.speechSynthesis.speak(message);
+    }, 3000);
+    document.nav.style.display = none;
+    document.querySelector('.you').style.display = none;
+    setTimeout(() => {
+        
+    document.nav.style.display = flex;
+    document.querySelector('.you').style.display = flex;
+    }, 5000);
+  </script>
+</html>
